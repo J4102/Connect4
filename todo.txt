@@ -1,0 +1,4 @@
+Make the checkWin method more efficient
+Have it more object oriented if you can!!
+Make the font much much bigger and more spaced out
+Create animation of the piece dropping into the column
