@@ -4,6 +4,8 @@ public class NORMConnect4
 {
     public static void main(String[] args)
     {
+        char c = 'a';
+        System.out.println(c);
         //7 width by 6 height
         //6 == how long big array is
         //7 == how long each individual array is
