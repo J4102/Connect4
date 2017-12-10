@@ -1,6 +1,7 @@
 public class Board
 {
     private String[][] board =  new String[6][7];
+    private Index[] diffs = new Index[2]; //Holds the pieces each player has placed in 1 turn
     private int speed;
     private boolean showAnimation;
     private int fontSize;
@@ -36,10 +37,15 @@ public class Board
 
     public void addDiff(int row, int col)
     {
-
+        //diffs[] find way to add it to either 0 or 1 index
     }
 
-    //Represents an index of a piece 
+    public String[][] getBoard()
+    {
+        return board;
+    }
+
+    //Represents an index of a piece
     private class Index
     {
         private int col;

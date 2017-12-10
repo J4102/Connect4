@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NORMConnect4
+public class Connect4Driver
 {
     public static void main(String[] args)
     {
