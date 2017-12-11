@@ -1,15 +1,14 @@
 public class Board
 {
-    private String[][] board =  new String[6][7];
-    private Index[] diffs = new Index[2]; //Holds the pieces each player has placed in 1 turn
+    private final String[][] board =  new String[6][7];
     private int speed;
-    private boolean showAnimation;
+    private boolean animation;
     private int fontSize;
 
 
     public Board()
     {
-        showAnimation = false;
+        animation = false;
         fontSize = 1;
         speed = 0;
     }
@@ -17,7 +16,7 @@ public class Board
     public Board(int speed, boolean showAnimation, int fontSize)
     {
         this.speed = speed;
-        this.showAnimation = showAnimation;
+        this.animation = showAnimation;
         this.fontSize = fontSize;
     }
 
@@ -25,19 +24,24 @@ public class Board
     public Board(Board boardObj)
     {
         this.speed = boardObj.speed;
-        this.showAnimation = boardObj.showAnimation;
+        this.animation = boardObj.animation;
         this.fontSize = boardObj.fontSize;
 
     }
 
-    public void updateBoard()
+    public int getSpeed()
     {
-
+        return speed;
     }
 
-    public void addDiff(int row, int col)
+    public boolean getAnimation()
     {
-        //diffs[] find way to add it to either 0 or 1 index
+        return animation;
+    }
+
+    public int getFontSize()
+    {
+        return fontSize;
     }
 
     public String[][] getBoard()
@@ -45,38 +49,26 @@ public class Board
         return board;
     }
 
-    //Represents an index of a piece
-    private class Index
+    public void setSpeed(int speed)
     {
-        private int col;
-        private int row;
-
-        public Index(int col, int row)
-        {
-                this.col = col;
-                this.row = row;
-        }
-
-        public int getCol()
-        {
-            return col;
-        }
-
-        public int getRow()
-        {
-            return row;
-        }
-
-        public void setCol(int col)
-        {
-            this.col = col;
-        }
-
-        public void setRow(int row)
-        {
-            this.row = row;
-        }
-
-
+        this.speed = speed;
     }
+
+    public void setAnimation(boolean animation)
+    {
+        this.animation = animation;
+    }
+
+    public void setFontSize(int fontSize)
+    {
+        this.fontSize = fontSize;
+    }
+
+    public void updateBoard(Player p1, Player p2)
+    {
+        //Print out only the rows that have been changed
+        //Obtain p1's row and p2's row and then update that by printing it out
+    }
+
+
 }

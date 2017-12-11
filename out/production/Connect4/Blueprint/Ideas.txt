@@ -1,0 +1,4 @@
+Player has his current index
+
+When board updates, it gets the 1st player's current index and the 2nd player's index
+    Then it gets its indexes and replaces them then
