@@ -30,13 +30,6 @@ public class Player
         this.symbol = symbol;
     }
 
-
-    public void setIndexPos(int row, int col)
-    {
-        curPiece.row = row;
-        curPiece.col = col;
-    }
-
     //Represents an index of a piece
     private class Index
     {
@@ -48,5 +41,12 @@ public class Player
             this.col = col;
             this.row = row;
         }
+
+        public void setIndexPos(int row, int col)
+        {
+            curPiece.row = row;
+            curPiece.col = col;
+        }
+
     }
 }

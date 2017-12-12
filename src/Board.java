@@ -1,13 +1,21 @@
 public class Board
 {
     private final String[][] board =  new String[6][7];
+    private final String boardSymbol = "O";
     private int speed;
     private boolean animation;
-    private int fontSize;
+    private int fontSize;;
 
 
     public Board()
     {
+        for(int row = 0; row < board.length; row++)
+        {
+            for(int col = 0; col < board[row].length; col++)
+            {
+                board[row][col] = boardSymbol;
+            }
+        }
         animation = false;
         fontSize = 1;
         speed = 0;
@@ -68,6 +76,11 @@ public class Board
     {
         //Print out only the rows that have been changed
         //Obtain p1's row and p2's row and then update that by printing it out
+    }
+
+    public void rollDown(Player p, int col)
+    {
+        //Loop down column until a symbol
     }
 
 

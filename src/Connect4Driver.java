@@ -5,9 +5,13 @@ public class Connect4Driver
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+        Board board = new Board();
+        Player p1 = new Player();
+        Player p2 = new Player();
+        boolean isRunning = true;
+
 
         //SETUP of board-------------------------------------------------------------
-        Board board = new Board();
 
         System.out.println("Hello! Welcome to Connect4! This is a text based game that is played solely on the terminal! Created by J4102.");
         System.out.println("The goal is to get 4 pieces in a row horizontally, vertically, or diagonally");
@@ -30,9 +34,8 @@ public class Connect4Driver
 
         //SETUP of board-------------------------------------------------------------
 
-        Player p1 = new Player();
-        Player p2 = new Player();
-        
+        //SETUP of players---------------------------------------------------------------
+
 
         System.out.print("Player 1, choose your symbol (1 letter character): ");
         p1.setSymbol(scanner.next().charAt(0));
@@ -40,7 +43,15 @@ public class Connect4Driver
 
         System.out.print("Player 2, choose your symbol (1 letter character): ");
         p1.setSymbol(scanner.next().charAt(0));
-        //System.out.println("Player 2, choose your symbol: ");
+
+        //SETUP of players---------------------------------------------------------------
+
+        while(isRunning)
+        {
+            //player 1 : enter column number
+            //
+        }
+
 
     }
 
