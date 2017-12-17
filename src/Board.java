@@ -78,7 +78,7 @@ public class Board
         //Obtain p1's row and p2's row and then update that by printing it out
     }
 
-    public void rollDown(Player p, int col)
+    public void placePiece(Player p, int col)
     {
         //Loop down column until a symbol
     }

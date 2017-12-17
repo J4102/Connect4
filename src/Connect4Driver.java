@@ -8,7 +8,7 @@ public class Connect4Driver
         Board board = new Board();
         Player p1 = new Player();
         Player p2 = new Player();
-        boolean isRunning = true;
+        boolean playerWin = false;
 
 
         //SETUP of board-------------------------------------------------------------
@@ -46,11 +46,26 @@ public class Connect4Driver
 
         //SETUP of players---------------------------------------------------------------
 
-        while(isRunning)
+        //GAMETIME --------------------------------------------------------------------
+        while(!playerWin && )
         {
             //player 1 : enter column number
+            System.out.print("[Player 1] Enter column number: ");
+            int p1Col = scanner.nextInt();
+
+            board.placePiece(p1, p1Col);
             //
+
+            System.out.print("[Player 2] Enter column number: ");
+            int p2Col = scanner.nextInt();
+
+            board.placePiece(p2, p2Col);
+
+            //board.checkwin // something like that
         }
+
+
+        //GAMETIME --------------------------------------------------------------------
 
 
     }
