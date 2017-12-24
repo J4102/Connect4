@@ -1,9 +1,10 @@
 public class Player
 {
-
     //The current index of a player
-    private Index curPiece;
     private char symbol;
+    private int amtPlaced;
+    private int pieceRow;
+    private int pieceCol;
 
     public Player()
     {
@@ -15,9 +16,19 @@ public class Player
         this.symbol = symbol;
     }
 
-    public Index getCurPiece()
+    public int getPieceRow()
     {
-        return curPiece;
+        return pieceRow;
+    }
+
+    public int getPieceCol()
+    {
+        return pieceCol;
+    }
+
+    public int getAmtPlaced()
+    {
+        return amtPlaced;
     }
 
     public char getSymbol()
@@ -30,23 +41,18 @@ public class Player
         this.symbol = symbol;
     }
 
-    //Represents an index of a piece
-    private class Index
+    //Place player's symbol onto the specified column
+    public void setPiece(Board b, int col)
     {
-        private int col;
-        private int row;
+        pieceRow = b.getAvailRow(col);
 
-        public Index(int col, int row)
+        if(pieceRow == -1)
         {
-            this.col = col;
-            this.row = row;
+            System.out.println("No piece was set. There is no more available row space in the column");
+            return;
         }
 
-        public void setIndexPos(int row, int col)
-        {
-            curPiece.row = row;
-            curPiece.col = col;
-        }
-
+        b.getBoard()[pieceRow][col] = symbol;
+        amtPlaced++;
     }
 }

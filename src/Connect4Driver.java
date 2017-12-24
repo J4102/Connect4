@@ -17,22 +17,21 @@ public class Connect4Driver
         System.out.println("The goal is to get 4 pieces in a row horizontally, vertically, or diagonally");
 
         System.out.println();
+
         System.out.println("Setup of Board: ");
 
-        System.out.print("Allow Animations? true or false: ");
-        board.setAnimation(scanner.nextBoolean());
+        System.out.println("Board symbol (placeholders for empty spaces, 1 character): ");
+        board.setSymbol(scanner.next().charAt(0));
 
-        if(board.getAnimation())
+        System.out.print("Allow drop animations? true or false: ");
+        board.setAllowAnimations(scanner.nextBoolean());
+
+        if(board.getAllowAnimations())
         {
             System.out.print("Speed of animation in ms (1 s = 1000ms)- the higher the slower: ");
             board.setSpeed(scanner.nextInt());
 
         }
-
-        System.out.print("Font size: ");
-        board.setFontSize(scanner.nextInt());
-
-        //SETUP of board-------------------------------------------------------------
 
         //SETUP of players---------------------------------------------------------------
 
@@ -44,10 +43,8 @@ public class Connect4Driver
         System.out.print("Player 2, choose your symbol (1 letter character): ");
         p1.setSymbol(scanner.next().charAt(0));
 
-        //SETUP of players---------------------------------------------------------------
-
         //GAMETIME --------------------------------------------------------------------
-        while(!playerWin && )
+        while(!playerWin && !board.isFull())
         {
             //player 1 : enter column number
             System.out.print("[Player 1] Enter column number: ");
