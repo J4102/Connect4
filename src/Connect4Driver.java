@@ -23,15 +23,9 @@ public class Connect4Driver
         System.out.println("Board symbol (placeholders for empty spaces, 1 character): ");
         board.setSymbol(scanner.next().charAt(0));
 
-        System.out.print("Allow drop animations? true or false: ");
-        board.setAllowAnimations(scanner.nextBoolean());
+        System.out.print("Speed of animation in ms (1 s = 1000ms)- the higher the slower. Type in 0 for no speed: ");
+        board.setSpeed(scanner.nextInt());
 
-        if(board.getAllowAnimations())
-        {
-            System.out.print("Speed of animation in ms (1 s = 1000ms)- the higher the slower: ");
-            board.setSpeed(scanner.nextInt());
-
-        }
 
         //SETUP of players---------------------------------------------------------------
 
@@ -44,23 +38,25 @@ public class Connect4Driver
         p1.setSymbol(scanner.next().charAt(0));
 
         //GAMETIME --------------------------------------------------------------------
-        while(!playerWin && !board.isFull())
+        String input = "y";
+        while(input.equals("y") || input.equals("Y"))
         {
+            while(!playerWin && !board.isFull())
+            {
             //player 1 : enter column number
             System.out.print("[Player 1] Enter column number: ");
             int p1Col = scanner.nextInt();
 
-            board.placePiece(p1, p1Col);
-            //
-
             System.out.print("[Player 2] Enter column number: ");
             int p2Col = scanner.nextInt();
 
-            board.placePiece(p2, p2Col);
-
             //board.checkwin // something like that
-        }
 
+            }
+
+            System.out.println("Play again? Type Y or y to continue.");
+            input = scanner.next();
+        }
 
         //GAMETIME --------------------------------------------------------------------
 
