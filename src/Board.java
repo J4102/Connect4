@@ -117,7 +117,13 @@ public class Board
     //Updates board visually (just print out all the board elements)
     public void updateBoard()
     {
-
+        for(int row = 0; row < board.length; row++)
+        {
+            for(int col = 0; col < board[row].length; col++)
+            {
+                System.out.println(board[row][col]);
+            }
+        }
     }
 
     //Returns if the board is full

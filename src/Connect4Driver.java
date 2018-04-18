@@ -43,15 +43,25 @@ public class Connect4Driver
         {
             while(!playerWin && !board.isFull())
             {
-            //player 1 : enter column number
-            System.out.print("[Player 1] Enter column number: ");
-            int p1Col = scanner.nextInt();
+                //player 1 : enter column number
+                System.out.print("[Player 1] Enter column number: ");
 
-            System.out.print("[Player 2] Enter column number: ");
-            int p2Col = scanner.nextInt();
+                while(!p1.setPiece(board, scanner.nextInt()))
+                {
+                    System.out.println("There is no space in the specified column.");
+                    System.out.print("[Player 1] Enter column number: ");
+                }
+
+
+                System.out.print("[Player 2] Enter column number: ");
+                int p2Col = scanner.nextInt();
+
+                //Check for the set piece thing
+
+
+                //Print out the board for every move
 
             //board.checkwin // something like that
-
             }
 
             System.out.println("Play again? Type Y or y to continue.");

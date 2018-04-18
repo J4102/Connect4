@@ -44,18 +44,20 @@ public class Player
     public void setAmtPlaced(int amtPlaced) { this.amtPlaced = amtPlaced; }
 
     //Place player's symbol onto the specified column
-    public void setPiece(Board b, int col)
+    public boolean setPiece(Board b, int col)
     {
         pieceRow = b.getAvailRow(col);
 
         if(pieceRow == -1)
         {
             System.out.println("No piece was set. There is no more available row space in the column");
-            return;
+            return false;
         }
 
+        pieceCol = col;
 
         b.getBoard()[pieceRow][col] = symbol;
         amtPlaced++;
+        return true;
     }
 }
