@@ -23,6 +23,7 @@ public class Connect4Driver
         System.out.println("Board symbol (placeholders for empty spaces, 1 character): ");
         board.setSymbol(scanner.next().charAt(0));
 
+        //Need threads for this!!
         System.out.print("Speed of animation in ms (1 s = 1000ms)- the higher the slower. Type in 0 for no speed: ");
         board.setSpeed(scanner.nextInt());
 
@@ -46,18 +47,31 @@ public class Connect4Driver
                 //player 1 : enter column number
                 System.out.print("[Player 1] Enter column number: ");
 
-                while(!p1.setPiece(board, scanner.nextInt()))
+                int p1Col = scanner.nextInt();
+
+                while(p1Col >= board.getBoard().length || p1Col < 0 && (board.getAvailRow(p1Col) >= 0))
                 {
-                    System.out.println("There is no space in the specified column.");
-                    System.out.print("[Player 1] Enter column number: ");
+                    System.out.println("Input a valid column for player 1: ");
+                    p1Col = scanner.nextInt();
                 }
+
+                p1.setPiece(board, p1Col);
+
 
 
                 System.out.print("[Player 2] Enter column number: ");
                 int p2Col = scanner.nextInt();
 
-                //Check for the set piece thing
+                while(p2Col >= board.getBoard().length || p2Col < 0 &&  (board.getAvailRow(p1Col) >= 0))
+                {
+                    System.out.println("Input a valid column for player 2: ");
+                    p2Col = scanner.nextInt();
+                }
 
+                p2.setPiece(board, p2Col);
+
+                //players have made 2 moves, add them to the total
+                board.setTotalMoves(board.getTotalMoves()+2);
 
                 //Print out the board for every move
 

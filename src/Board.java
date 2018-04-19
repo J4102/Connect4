@@ -77,7 +77,7 @@ public class Board
     }
 
     //Return total pieces of both player's amount placed added together
-    public int getTotalPieces()
+    public int getTotalMoves()
     {
         return totalPieces;
     }
@@ -112,6 +112,11 @@ public class Board
     public void setSymbol(char symbol)
     {
         this.symbol = symbol;
+    }
+
+    public void setTotalMoves(int totalPieces)
+    {
+        this.totalPieces = totalPieces;
     }
 
     //Updates board visually (just print out all the board elements)
