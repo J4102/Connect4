@@ -75,6 +75,7 @@ public class Connect4Driver
 
                 //Print out the board for every move
 
+                board.updateBoard();
             //board.checkwin // something like that
             }
 
