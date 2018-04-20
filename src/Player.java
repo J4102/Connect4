@@ -41,18 +41,23 @@ public class Player
         this.symbol = symbol;
     }
 
-    public void setAmtPlaced(int amtPlaced) { this.amtPlaced = amtPlaced; }
+    public void setAmtPlaced(int amtPlaced)
+    {
+        this.amtPlaced = amtPlaced;
+    }
 
     //Place player's symbol onto the specified column
     //pieceRow doesn't need to be checked if out of bounds because this is done with the avail method in the driver class
     public void setPiece(Board b, int col)
     {
-        //subtract 1 from available rows from column
-        b.getAvailRowsInColumn()[col]--;
 
         pieceRow = b.getAvailRow(col);
 
         b.getBoard()[pieceRow][col] = symbol;
+
         amtPlaced++;
+        b.getAvailRowsInColumn()[col]--;
+
+        System.out.println("new row value: " + b.getAvailRowsInColumn()[col]);
     }
 }

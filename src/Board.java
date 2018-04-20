@@ -7,8 +7,7 @@ public class Board
 {
     private final char[][] board =  new char[6][7];
 
-    //values in each index increment by 1 every time player makes a move
-
+    //Array to keep track of each index increment that changes by 1 every time player makes a move
     private final int[] availRowsInColumn = new int[6];
 
     //Needs to be string for future "font sizes";
@@ -17,43 +16,68 @@ public class Board
     private int speed;
     private int totalPieces;
 
-    //Instance initializer, this code is copied to every constructor!
-    //Initializes board array with filled indexes
-    //Fill up availRowsInColsList array all to 6 (starting position of all pieces)
+    public Board()
     {
+        symbol = 'O';
+        speed = 0;
+
         for(int row = 0; row < board.length; row++)
         {
             for(int col = 0; col < board[row].length; col++)
             {
                 board[row][col] = symbol;
             }
+
         }
 
         for(int i = 0; i < availRowsInColumn.length; i++)
         {
-            availRowsInColumn[i] = 6;
+            availRowsInColumn[i] = 5;
         }
     }
 
-    /** Default constructor - symbol set to letter O and speed set to number 0
-     *
-     */
-    public Board()
+    public Board(char symbol)
     {
-        symbol = 'O';
+        this.symbol = symbol;
         speed = 0;
+
+        for(int row = 0; row < board.length; row++)
+        {
+            for(int col = 0; col < board[row].length; col++)
+            {
+                board[row][col] = symbol;
+            }
+
+        }
+
+        for(int i = 0; i < availRowsInColumn.length; i++)
+        {
+            availRowsInColumn[i] = 5;
+        }
+
     }
 
-    /**
-     *
-     * @param speed Speed of animation
-     * @param symbol Symbol of player's piece
-     */
     public Board(int speed, char symbol)
     {
 
         this.speed = speed;
         this.symbol = symbol;
+
+        for(int row = 0; row < board.length; row++)
+        {
+            for(int col = 0; col < board[row].length; col++)
+            {
+                board[row][col] = symbol;
+            }
+
+        }
+
+        for(int i = 0; i < availRowsInColumn.length; i++)
+        {
+            availRowsInColumn[i] = 5;
+        }
+
+
     }
 
     //Copy constructor
@@ -117,6 +141,11 @@ public class Board
     public void setTotalMoves(int totalPieces)
     {
         this.totalPieces = totalPieces;
+    }
+
+    public void decrementNumRowInColumn(int col)
+    {
+        availRowsInColumn[col]--;
     }
 
     //Updates board visually (just print out all the board elements)

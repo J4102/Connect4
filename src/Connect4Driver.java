@@ -5,7 +5,6 @@ public class Connect4Driver
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        Board board = new Board();
         Player p1 = new Player();
         Player p2 = new Player();
         boolean playerWin = false;
@@ -21,12 +20,13 @@ public class Connect4Driver
         System.out.println("Setup of Board: ");
 
         System.out.println("Board symbol (placeholders for empty spaces, 1 character): ");
-        board.setSymbol(scanner.next().charAt(0));
+        char boardSymbol = scanner.next().charAt(0);
 
         //Need threads for this!!
         System.out.print("Speed of animation in ms (1 s = 1000ms)- the higher the slower. Type in 0 for no speed: ");
-        board.setSpeed(scanner.nextInt());
+        int boardSpeed= scanner.nextInt();
 
+        Board board = new Board(boardSpeed, boardSymbol);
 
         //SETUP of players---------------------------------------------------------------
 
@@ -36,7 +36,7 @@ public class Connect4Driver
 
 
         System.out.print("Player 2, choose your symbol (1 letter character): ");
-        p1.setSymbol(scanner.next().charAt(0));
+        p2.setSymbol(scanner.next().charAt(0));
 
         //GAMETIME --------------------------------------------------------------------
         String input = "y";
@@ -49,11 +49,13 @@ public class Connect4Driver
 
                 int p1Col = scanner.nextInt();
 
-                while(p1Col >= board.getBoard().length || p1Col < 0 && (board.getAvailRow(p1Col) >= 0))
+                while(p1Col >= board.getBoard().length || p1Col < 0 && (!(board.getAvailRow(p1Col) >= 0)))
                 {
                     System.out.println("Input a valid column for player 1: ");
                     p1Col = scanner.nextInt();
                 }
+
+                System.out.println("available row value: " + board.getAvailRow(p1Col));
 
                 p1.setPiece(board, p1Col);
 
@@ -62,7 +64,7 @@ public class Connect4Driver
                 System.out.print("[Player 2] Enter column number: ");
                 int p2Col = scanner.nextInt();
 
-                while(p2Col >= board.getBoard().length || p2Col < 0 &&  (board.getAvailRow(p1Col) >= 0))
+                while(p2Col >= board.getBoard().length || p2Col < 0 &&  (!(board.getAvailRow(p1Col) >= 0)))
                 {
                     System.out.println("Input a valid column for player 2: ");
                     p2Col = scanner.nextInt();
