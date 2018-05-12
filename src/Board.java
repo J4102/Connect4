@@ -8,7 +8,7 @@ public class Board
     private final char[][] board =  new char[6][7];
 
     //Array to keep track of each index increment that changes by 1 every time player makes a move
-    private final int[] availRowsInColumn = new int[6];
+    private final int[] availRowsInColumn = new int[7];
 
     //Needs to be string for future "font sizes";
 
@@ -54,29 +54,6 @@ public class Board
         {
             availRowsInColumn[i] = 5;
         }
-
-    }
-
-    public Board(int speed, char symbol)
-    {
-
-        this.speed = speed;
-        this.symbol = symbol;
-
-        for(int row = 0; row < board.length; row++)
-        {
-            for(int col = 0; col < board[row].length; col++)
-            {
-                board[row][col] = symbol;
-            }
-
-        }
-
-        for(int i = 0; i < availRowsInColumn.length; i++)
-        {
-            availRowsInColumn[i] = 5;
-        }
-
 
     }
 
@@ -138,18 +115,8 @@ public class Board
         this.symbol = symbol;
     }
 
-    public void setTotalMoves(int totalPieces)
-    {
-        this.totalPieces = totalPieces;
-    }
-
-    public void decrementNumRowInColumn(int col)
-    {
-        availRowsInColumn[col]--;
-    }
-
     //Updates board visually (just print out all the board elements)
-    public void updateBoard()
+    public void printBoard()
     {
         for(int row = 0; row < board.length; row++)
         {

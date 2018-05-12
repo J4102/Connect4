@@ -3,8 +3,8 @@ public class Player
     //The current index of a player
     private char symbol;
     private int amtPlaced;
-    private int pieceRow;
-    private int pieceCol;
+    private int curPieceRow;
+    private int curPieceCol;
 
     public Player()
     {
@@ -16,14 +16,14 @@ public class Player
         this.symbol = symbol;
     }
 
-    public int getPieceRow()
+    public int getCurPieceRow()
     {
-        return pieceRow;
+        return curPieceRow;
     }
 
-    public int getPieceCol()
+    public int getCurPieceCol()
     {
-        return pieceCol;
+        return curPieceCol;
     }
 
     public int getAmtPlaced()
@@ -47,17 +47,27 @@ public class Player
     }
 
     //Place player's symbol onto the specified column
-    //pieceRow doesn't need to be checked if out of bounds because this is done with the avail method in the driver class
-    public void setPiece(Board b, int col)
+    //Return's false if setting the piece failed
+    public void setPiece(Board board, int col)
     {
 
-        pieceRow = b.getAvailRow(col);
+        curPieceRow = board.getAvailRow(col);
 
-        b.getBoard()[pieceRow][col] = symbol;
+        board.getBoard()[curPieceRow][col] = symbol;
 
         amtPlaced++;
-        b.getAvailRowsInColumn()[col]--;
+        board.getAvailRowsInColumn()[col]--;
 
-        System.out.println("new row value: " + b.getAvailRowsInColumn()[col]);
+    }
+
+    public boolean isValidCol(Board board, int col)
+    {
+        return (col<= board.getBoard()[0].length || col > 0) && board.getAvailRow(col) != -1;
+    }
+
+    public boolean hasWon(Board board)
+    {
+
+        return false;
     }
 }
