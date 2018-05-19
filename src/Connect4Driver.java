@@ -7,8 +7,6 @@ public class Connect4Driver
         Scanner scanner = new Scanner(System.in);
         Player p1 = new Player();
         Player p2 = new Player();
-        boolean playerWin = false;
-
 
         //SETUP of board-------------------------------------------------------------
 
@@ -39,7 +37,9 @@ public class Connect4Driver
         String input = "y";
         while(input.equals("y") || input.equals("Y"))
         {
-            while(!playerWin && !board.isFull())
+            board.clearBoard();
+
+            while(!board.isFull())
             {
                 //player 1 : enter column number
                 System.out.print("[Player 1] Enter column number: ");
@@ -53,8 +53,15 @@ public class Connect4Driver
                     p1Col = scanner.nextInt();
                 }
 
+                //Set player piece on board and update board
                 p1.setPiece(board, p1Col);
+                board.printBoard();
 
+                if(p1.checkWin(board))
+                {
+                    board.printWin(p1);
+                    break;
+                }
 
                 //Same code as player1 but now with player2
                 System.out.print("[Player 2] Enter column number: ");
@@ -66,10 +73,17 @@ public class Connect4Driver
                     p2Col = scanner.nextInt();
                 }
 
+                //Set player piece on board and update board
                 p2.setPiece(board, p2Col);
+                board.printBoard();
+
+                if(p2.checkWin(board))
+                {
+                    board.printWin(p2);
+                    break;
+                }
 
                 //Print out the board for every move
-
                 board.printBoard();
             }
 
@@ -78,9 +92,6 @@ public class Connect4Driver
         }
 
         //GAMETIME --------------------------------------------------------------------
-
-
     }
-
 
 }

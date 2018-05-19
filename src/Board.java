@@ -5,6 +5,7 @@
  */
 public class Board
 {
+    //1 2 3 4 5 6 7
     private final char[][] board =  new char[6][7];
 
     //Array to keep track of each index increment that changes by 1 every time player makes a move
@@ -109,6 +110,7 @@ public class Board
         this.speed = speed;
     }
 
+
     //Sets the slot symbols of the board
     public void setSymbol(char symbol)
     {
@@ -128,10 +130,34 @@ public class Board
             System.out.println();
         }
     }
-
     //Returns if the board is full
     public boolean isFull()
     {
         return totalPieces == 42;
+    }
+
+    //Prints winning statistics for winning player
+    public void printWin(Player p)
+    {
+        printBoard();
+        System.out.println("Player 2 has won!");
+        System.out.println("Amount of moves placed: " + p.getAmtPlaced());
+        System.out.println("Winning move: " + p.toString());
+    }
+
+    public void clearBoard()
+    {
+        for (int row = 0; row < board.length; row++)
+        {
+            for (int col = 0; col < board[row].length; col++)
+            {
+                board[row][col] = symbol;
+            }
+        }
+
+        for(int i = 0; i < availRowsInColumn.length; i++)
+        {
+            availRowsInColumn[i] = 5;
+        }
     }
 }
