@@ -8,7 +8,6 @@ public class Player
 
     public Player()
     {
-
     }
 
     public Player(char symbol)
@@ -63,21 +62,23 @@ public class Player
 
     public boolean isValidCol(Board board, int col)
     {
-        return (col<= board.getBoard()[0].length || col > 0) && board.getAvailRow(col) != -1;
+        return (col<= board.getBoard()[0].length && col >= 0) && board.getAvailRow(col) != -1;
     }
 
     public boolean checkWin(Board board)
     {
 
-        return getNumPiecesHorizontal(board) == 4 || getNumPiecesVertical(board) == 4;
+        return getNumPiecesHorizontal(board) == 4 || getNumPiecesVertical(board) == 4
+                || getNumPiecesDiagLeft(board) == 4  || getNumPiecesDiagRight(board) == 4;
 
     }
 
+    //Checking for number of consecutive pieces that are the same horizontally
     private int getNumPiecesHorizontal(Board board)
     {
         char[][] cBoard = board.getBoard();
 
-        int cnt = 0;
+        int cnt = 1;
 
         int tmpCol = curPieceCol-1;
 
@@ -88,7 +89,9 @@ public class Player
             cnt++;
         }
 
-        tmpCol = curPieceCol;
+        //Checking the right now
+
+        tmpCol = curPieceCol+1;
 
         while(tmpCol < cBoard[0].length && cBoard[curPieceRow][tmpCol] == symbol)
         {
@@ -99,11 +102,12 @@ public class Player
         return cnt;
     }
 
+    //Checking for number of consecutive pieces that are the same vertically
     private int getNumPiecesVertical(Board board)
     {
         char[][] cBoard = board.getBoard();
 
-        int cnt = 0;
+        int cnt = 1;
 
         int tmpRow = curPieceRow-1;
 
@@ -114,7 +118,7 @@ public class Player
             cnt++;
         }
 
-        tmpRow = curPieceRow;
+        tmpRow = curPieceRow+1;
 
         //Checking down for same piece
         while(tmpRow < cBoard.length && cBoard[tmpRow][curPieceCol] == symbol)
@@ -130,35 +134,64 @@ public class Player
     {
         char[][] cBoard = board.getBoard();
 
-        int cnt = 0;
+        int cnt = 1;
 
-        int tmpRow = curPieceRow;
-        int tmpCol = curPieceCol;
+        int tmpRow = curPieceRow-1;
+        int tmpCol = curPieceCol-1;
 
-        //checking up for same piece
-        while(tmpRow >= 0&& cBoard[tmpRow][curPieceCol] == symbol)
+        //checking up diagonally to the left
+        while(tmpRow >= 0 && tmpCol >= 0 &&  cBoard[tmpRow][tmpCol] == symbol)
         {
             tmpRow--;
+            tmpCol--;
             cnt++;
         }
 
-        tmpRow = curPieceRow;
+        tmpRow = curPieceRow+1;
+        tmpCol = curPieceCol+1;
 
-        //Checking down for same piece
-        while(tmpRow < cBoard.length && cBoard[tmpRow][curPieceCol] == symbol)
+        //Checking down diagonally to the right
+        while(tmpRow < cBoard.length && tmpCol < cBoard[0].length && cBoard[tmpRow][tmpCol] == symbol)
         {
             tmpRow++;
+            tmpCol++;
             cnt++;
         }
 
         return cnt;
     }
 
-    private int getNumPiecesDiagRight()
+    private int getNumPiecesDiagRight(Board board)
     {
+        char[][] cBoard = board.getBoard();
 
-        return 5;
+        int cnt = 1;
+
+        int tmpRow = curPieceRow-1;
+        int tmpCol = curPieceCol+1;
+
+        //checking up diagonally to the right
+        while(tmpRow >= 0 && tmpCol < cBoard[0].length && cBoard[tmpRow][tmpCol] == symbol)
+        {
+            tmpRow--;
+            tmpCol++;
+            cnt++;
+        }
+
+        tmpRow = curPieceRow+1;
+        tmpCol = curPieceCol-1;
+
+        //Checking down diagonally to the left
+        while(tmpRow < cBoard.length && tmpCol >= 0 && cBoard[tmpRow][tmpCol] == symbol)
+        {
+            tmpRow++;
+            tmpCol--;
+            cnt++;
+        }
+
+        return cnt;
     }
+
 
     public String toString()
     {
@@ -166,58 +199,27 @@ public class Player
     }
 
     /*/
-    //Check for pieces surrounding current piece
-        //If find a piece, go the direction both ways (but stop 1 way if there is a 0 or the piece of opposite symbol)
-        //Go direction depending on the closests piece orientation
+        private enum Color
+    {
 
-        ////HORIZONTAL MOVING left and right CHECKING FOR CONNECT 4
+        BLACK("\u001B[30m"),
+        RED("\u001B[31m"),
+        GREEN("\u001B[32m"),
+        YELLOW("\u001B[33m"),
+        BLUE("\u001B[34m"),
+        PURPLE("\u001B[35m"),
+        CYAN("\u001B[36m"),
+        WHITE("\u001B[37m");
 
-        //Moving to the right checking for same piece
-        while(tmpPieceCol < cBoard.length && cBoard[curPieceRow][tmpPieceCol] == symbol)
+        private final String code;
+        Color(String code)
         {
-            tmpPieceCol++;
-            count++;
+            this.code = code;
         }
 
-        //Moving to the left checking for same piece
-        tmpPieceCol = curPieceCol-1;
-        while(tmpPieceCol >= 0 && cBoard[curPieceRow][tmpPieceCol] == symbol)
-        {
-            tmpPieceCol--;
-            count++;
+        public String getCode() {
+            return code;
         }
-
-        if(count == NUM_WIN)
-        {
-            return true;
-        }
-
-        ////HORIZONTAL MOVING left and right CHECKING FOR CONNECT 4
-
-        count = 0;
-
-        //VERTICAL MOVING UP AND DOWN CHECKING FOR CONNECT 4
-
-        //Moving up to check for same piece
-        while(tmpPieceRow >= 0 && cBoard[tmpPieceRow][curPieceCol] == symbol)
-        {
-            tmpPieceRow--;
-            count++;
-        }
-
-        //Moving down to check for the same piece
-        tmpPieceRow = curPieceRow+1;
-        while(tmpPieceRow < cBoard.length && cBoard[tmpPieceRow][curPieceCol] == symbol)
-        {
-            tmpPieceRow++;
-            count++;
-        }
-
-        //VERTICAL MOVING UP AND DOWN CHECKING FOR CONNECT 4
-
-        count = 0;
-
-        //DIAGONAL moving
-
+    }
      */
 }

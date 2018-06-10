@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Scanner;
 
 public class Connect4Driver
@@ -5,7 +6,8 @@ public class Connect4Driver
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        Player p1 = new Player();
+
+        Player p1 = new Player(); 
         Player p2 = new Player();
 
         //SETUP of board-------------------------------------------------------------
@@ -83,11 +85,9 @@ public class Connect4Driver
                     break;
                 }
 
-                //Print out the board for every move
-                board.printBoard();
             }
 
-            System.out.println("Play again? Type Y or y to continue.");
+            System.out.println("Play again? Type Y or y to continue. Press any key to stop.");
             input = scanner.next();
         }
 

@@ -11,8 +11,6 @@ public class Board
     //Array to keep track of each index increment that changes by 1 every time player makes a move
     private final int[] availRowsInColumn = new int[7];
 
-    //Needs to be string for future "font sizes";
-
     private char symbol;
     private int speed;
     private int totalPieces;
@@ -122,12 +120,14 @@ public class Board
     {
         for(int row = 0; row < board.length; row++)
         {
+            System.out.print("|");
             for(int col = 0; col < board[row].length; col++)
             {
-                System.out.print(board[row][col]);
+                System.out.print(board[row][col] + "|");
             }
 
             System.out.println();
+            System.out.println("---------------");
         }
     }
     //Returns if the board is full

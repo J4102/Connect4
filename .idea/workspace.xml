@@ -69,55 +69,35 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Player.java">
+    <leaf>
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1354">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#3196#3197#0" expanded="true" />
-                <element signature="e#3266#3267#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connect4Driver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1548">
-              <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="1944">
+              <caret line="129" column="47" lean-forward="false" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <file leaf-file-name="Connect4Driver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="160" column="9" lean-forward="false" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+            <state relative-caret-position="162">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
-                <element signature="e#2106#2107#0" expanded="true" />
-                <element signature="e#2151#2152#0" expanded="true" />
-                <element signature="e#2393#2394#0" expanded="true" />
-                <element signature="e#2427#2428#0" expanded="true" />
-                <element signature="e#2515#2516#0" expanded="true" />
-                <element signature="e#2551#2552#0" expanded="true" />
-                <element signature="e#2978#2979#0" expanded="true" />
-                <element signature="e#3018#3019#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,6 +115,7 @@
     <findStrings>
       <find>fontSize</find>
       <find>amtPlaced</find>
+      <find>setpiece</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -160,14 +141,14 @@
         <option value="$PROJECT_DIR$/src/NORMConnect4.java" />
         <option value="$PROJECT_DIR$/src/PreviousCode" />
         <option value="$PROJECT_DIR$/src/Blueprint/Ideas.txt" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/Connect4Driver.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="24" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
@@ -212,8 +193,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -420,7 +401,7 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="743" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -431,12 +412,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11653543" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.23206443" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16837482" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -476,794 +457,28 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="129" column="47" lean-forward="false" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="121" lean-forward="false" selection-start-line="46" selection-start-column="121" selection-end-line="46" selection-end-column="121" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="52" lean-forward="false" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="52" lean-forward="false" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="51" lean-forward="false" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="51" lean-forward="false" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="126" column="64" lean-forward="false" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connect4Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
-          <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="160" column="9" lean-forward="false" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
-          <folding>
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1354">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
